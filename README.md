@@ -18,8 +18,7 @@ gcloud compute instances create reddit-app-start-script  --boot-disk-size=10GB  
 
 >Создайте аналогичное правило из консоли с помощью gcloud. Используемую команду gcloud необходимо добавить в описание репозитория (README.md)
 
-gcloud compute firewall-rules create allow-puma-test --network default --action allow --direction ingress --rules tcp --source-ranges 0.0.0.0/0 --priority 1000 --target-tags puma-server
+gcloud compute firewall-rules create allow-puma-test --network default --action allow --direction ingress --rules tcp:80 --source-ranges 0.0.0.0/0 --priority 1000 --target-tags puma-server
 
-
-testapp_IP = 35.204.176.219
-testapp_port = 9292 
+testapp_IP=35.204.176.219
+testapp_port=9292
