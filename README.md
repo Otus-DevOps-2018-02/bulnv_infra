@@ -6,7 +6,7 @@ bulnv Infra repository
 
 Оптимальным на мой взгляд будет Site-to-site VPN c роутером установленным on-site, я попытался сделать это на своей старенькой Cisco 1841 но пока безуспешно, in progress...
 UPD: Site-to-site VPN настроен http://prntscr.com/iuz413
- 
+
 bastion_IP = 35.204.253.80
 someinternalhost_IP = 10.164.0.3
 
@@ -22,3 +22,8 @@ gcloud compute firewall-rules create allow-puma-test --network default --action 
 
 testapp_IP=35.204.176.219
 testapp_port=9292
+
+# Homework-6
+ - При помощи packer "запечен" образ Ununtu с предустановленным MongoDB, Ruby и пост фактум задеполеным приложением reddit (Параметрирование выполнено через переменныи и подключаемый файл json)
+ - В рамках задания со * с помощью packer подготовлен fully-baked образ с предустановленным приложением и автоматически запускающимся веб сервером puma в качестве systemd unit'a
+ - В папке config-scripts софрмирован скрипт позволяющий запустить итоговый инстанс.
