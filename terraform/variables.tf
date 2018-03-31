@@ -20,4 +20,3 @@ variable private_key_path {
   description = "private key location"
 
 }
-s
