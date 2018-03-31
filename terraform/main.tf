@@ -6,7 +6,7 @@ provider "google" {
 
 resource "google_compute_project_metadata" "default" {
   metadata {
-    ssh-keys = "appuser:${file(var.public_key_path)}appuser1:${file(var.public_another_key_path)}"
+    ssh-keys = "appuser:${file(var.public_key_path)}appuser1:${file(var.public_key_path)}"
   }
 }
 
