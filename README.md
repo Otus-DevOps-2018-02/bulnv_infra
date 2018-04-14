@@ -22,3 +22,8 @@ gcloud compute firewall-rules create allow-puma-test --network default --action 
 
 testapp_IP=35.204.176.219
 testapp_port=9292
+
+# Homework-6
+ - При помощи packer "запечен" образ Ununtu с предустановленным MongoDB, Ruby и пост фактум задеполеным приложением reddit (Параметрирование выполнено через переменныи и подключаемый файл json)
+ - В рамках задания со * с помощью packer подготовлен fully-baked образ с предустановленным приложением и автоматически запускающимся веб сервером puma в качестве systemd unit'a
+ - В папке config-scripts софрмирован скрипт позволяющий запустить итоговый инстанс.

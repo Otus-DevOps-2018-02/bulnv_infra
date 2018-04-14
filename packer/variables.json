@@ -1,0 +1,11 @@
+{
+  "project_id": "mydrive-1232",
+  "image_name": "reddit-base",
+  "machine_type": "f1-micro",
+  "source_image_family": "ubuntu-1604-lts",
+  "image_description": "baked reddit image",
+  "disk_type": "pd-standard",
+  "disk_size": "10",
+  "network": "default",
+  "tags": "puma-server"
+}
