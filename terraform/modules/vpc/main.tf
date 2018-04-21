@@ -4,7 +4,7 @@ resource "google_compute_firewall" "firewall_puma" {
 
   allow {
     protocol = "tcp"
-    ports    = ["9292", "22"]
+    ports    = ["9292", "22", "80"]
   }
 
   source_ranges = "${var.source_ranges}"
