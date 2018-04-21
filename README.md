@@ -68,3 +68,9 @@ terraform apply и проверьте результат;
   - Выполнено начальное конфигурирование (inventory + ansible.cfg)
   - Написан простой playbook
   - Выполнено задание со * (dyna_inv.sh)
+
+  # Homework-10:
+  - Создан playbook'и- 1PB=1 scenario, 1pb=ManyScenarios, Many PB = Many ManyScenarios
+  - Заиспользовали handlers
+  - Набросали по быстрому свой Dynamic inventory
+  - Научились переиспользовать PB через include
