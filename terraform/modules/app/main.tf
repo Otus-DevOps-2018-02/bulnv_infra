@@ -29,24 +29,24 @@ resource "google_compute_instance" "app" {
     private_key = "${file(var.private_key_path)}"
   }
 
-/*  provisioner "file" {
+  provisioner "file" {
     content     = "${data.template_file.puma.rendered}"
     destination = "/tmp/puma.service"
   }
 
   provisioner "remote-exec" {
     script = "${path.module}/files/deploy.sh"
-  } */
+  }
 }
 
 resource "google_compute_address" "app_ip" {
   name = "reddit-app-ip"
 }
-/*
+
 data "template_file" "puma" {
   template = "${file("${path.module}/files/puma.service.tpl")}"
 
   vars {
     db_ip = "${var.db_ip}"
   }
-} */
+}
