@@ -1,0 +1,2 @@
+env: stage
+inventory_dir: prod

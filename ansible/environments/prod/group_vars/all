@@ -1,0 +1,2 @@
+env: prod
+inventory_dir: prod
