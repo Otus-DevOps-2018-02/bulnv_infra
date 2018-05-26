@@ -8,3 +8,11 @@
 infra-d293af645631.json
 jdauphant.nginx
 vault.key
+
+# Vagrant & molecule
+.vagrant/
+*.log
+*.pyc
+.molecule
+.cache
+.pytest_cache
